@@ -1,1 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Focus Fable</title>
+  <style>
+    body  {
+      background-image: url("paper.gif");
+      background-color: beige;
+    }
+    </style>
+</head>
+<body>
+   
+<div class="topnav">
+  <a class="active" href="#home">Home</a>
+  <a href ="#" onclick="showNews()">News</a>
+  <a href="#" onclick="showContact()">Contact</a>
+</div>
+<div id="contactContent" style="display: none;">
+  <h2>Contact Us</h2>
+  <p>Email: Art@Artists.com</p>
+  <p>Phone: 27550530</p>
+</div>
+<div id="newsContent" style="display: none;">
+  <h2>Contact Us</h2>
+  <p> Sneak Peek into the Unveiled Masterpieces: :  Embark on a journey where creativity thrives and aspirations take flight.
+     Discover a realm where your desires find their perfect match, offering endless possibilities.</p>
+    </div>
+    <p> 
+      "Discover the beauty that speaks volumes. Dive into a world of captivating artistry awaiting its perfect home.
+       <p>Explore, admire, and make these exquisite pieces yours today."</p>
+  <div class="gallery" id="galleryPhotography">
+    <img src="https://ih1.redbubble.net/image.540463799.7812/fposter,small,wall_texture,product,750x1000.u2.jpg" 
+    alt="Trulli" width="250" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdPe0OxCn5xbnKt1u1RTMTU03azfl9UiHFug&usqp=CAU"  
+    alt="Trulli" width="250" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-Ba8QxUvSK4btN92TcIJ_VRzUcEC1Z6teQw&usqp=CAU" 
+     alt="Trulli" width="250" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa8SCQLRj0-Hn6OYcwSliYq9q9y49wTXsRIQ&usqp=CAU" 
+     alt="Trulli" width="250" height="200">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkkJw4PamddrkRXyPhmjiPOWtrjLXi6tGplg&usqp=CAU" 
+     alt="Trulli" width="250" height="200">
+  </div>
+  <p>Here's some projects for sale </s>
+  </p>
+  <div id="myModal" class="modal">
+
+    <img class="modal-content" id="modalImg">
+  </div>
+    <div class="gallery" id="gallery">
+      <div class="image-card">
+        <img src="https://cdn.britannica.com/65/59965-050-69A8E849/Mount-Williamson---Clearing-Storm-Ansel-Adams-1944.jpg
+        " alt="Image 1">
+        <div class="image-info">
+          <h3>Image 1</h3>
+          <p>Price: $350</p>
+          <button onclick="buyImage('Image 1', 350)">Buy</button>
+        </div>
+      </div>
+      <div class="image-card">
+        <img src="https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/12/Artistic-expression-01.jpg?resize=1500%2C1061&ssl=1" 
+        alt="Photo 2">
+        <div class="image-info">
+          <h3>Image 2</h3>
+          <p>Price: $500</p>
+          <button onclick="buyImage('Image 2', 500)">Buy</button>
+        </div>
+        <div class="image-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWvjw37APvWWqnEEStqzgg2AUP__tpeg6L8Q&usqp=CAU" 
+            alt="Photo 2">
+            <div class="image-info">
+              <h3>Image 2</h3>
+              <p>Price: $750</p>
+              <button onclick="buyImage('Image 3', 750)">Buy</button>
+            </div>
+      </div>
+
+    </div>
+    <button onclick="goToSellPage()">Offer Your Image for Sale</button>
+    <div id="cart">
+      <h2>Cart</h2>
+      <ul id="cart-items"></ul>
+      <p>Total: $<span id="totalAmount">0</span></p>
+      <button onclick="checkout()">Checkout</button>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>
 
